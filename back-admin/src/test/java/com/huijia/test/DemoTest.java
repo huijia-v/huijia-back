@@ -1,5 +1,6 @@
 package com.huijia.test;
 
+import com.huijia.common.redis.utils.RedisUtils;
 import com.huijia.domain.Dealer;
 import com.huijia.mapper.DealerMapper;
 import jakarta.annotation.Resource;
@@ -25,5 +26,11 @@ public class DemoTest {
     public void test() {
         Dealer dealer = dealerMapper.selectById(1L);
         System.out.println(dealer);
+    }
+
+
+    @Test
+    public void test2() {
+        RedisUtils.getClient();
     }
 }

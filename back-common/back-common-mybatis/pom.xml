@@ -14,13 +14,11 @@
         <dependency>
             <groupId>com.huijia</groupId>
             <artifactId>back-common-core</artifactId>
-            <version>${revision}</version>
         </dependency>
 
         <dependency>
             <groupId>com.huijia</groupId>
             <artifactId>back-common-satoken</artifactId>
-            <version>${revision}</version>
         </dependency>
 
         <!-- dynamic-datasource 多数据源-->

@@ -138,13 +138,13 @@
       </dependency>
 
       <!-- common 的依赖配置-->
-<!--      <dependency>-->
-<!--        <groupId>org.dromara</groupId>-->
-<!--        <artifactId>ruoyi-common-bom</artifactId>-->
-<!--        <version>${revision}</version>-->
-<!--        <type>pom</type>-->
-<!--        <scope>import</scope>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>com.huijia</groupId>
+        <artifactId>back-common-bom</artifactId>
+        <version>${revision}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
       <dependency>
         <groupId>org.springdoc</groupId>
@@ -253,7 +253,7 @@
       </dependency>
       <!--短信sms4j-->
       <dependency>
-        <groupId>com.huijia.sms4j</groupId>
+        <groupId>org.dromara.sms4j</groupId>
         <artifactId>sms4j-spring-boot-starter</artifactId>
         <version>${sms4j.version}</version>
       </dependency>
@@ -327,32 +327,32 @@
       </dependency>
 
 <!--      <dependency>-->
-<!--        <groupId>org.dromara</groupId>-->
+<!--        <groupId>com.huijia</groupId>-->
 <!--        <artifactId>ruoyi-system</artifactId>-->
 <!--        <version>${revision}</version>-->
 <!--      </dependency>-->
 
 <!--      <dependency>-->
-<!--        <groupId>org.dromara</groupId>-->
+<!--        <groupId>com.huijia</groupId>-->
 <!--        <artifactId>ruoyi-job</artifactId>-->
 <!--        <version>${revision}</version>-->
 <!--      </dependency>-->
 
 <!--      <dependency>-->
-<!--        <groupId>org.dromara</groupId>-->
+<!--        <groupId>com.huijia</groupId>-->
 <!--        <artifactId>ruoyi-generator</artifactId>-->
 <!--        <version>${revision}</version>-->
 <!--      </dependency>-->
 
 <!--      <dependency>-->
-<!--        <groupId>org.dromara</groupId>-->
+<!--        <groupId>com.huijia</groupId>-->
 <!--        <artifactId>ruoyi-demo</artifactId>-->
 <!--        <version>${revision}</version>-->
 <!--      </dependency>-->
 
       <!--  工作流模块  -->
 <!--      <dependency>-->
-<!--        <groupId>org.dromara</groupId>-->
+<!--        <groupId>com.huijia</groupId>-->
 <!--        <artifactId>ruoyi-workflow</artifactId>-->
 <!--        <version>${revision}</version>-->
 <!--      </dependency>-->

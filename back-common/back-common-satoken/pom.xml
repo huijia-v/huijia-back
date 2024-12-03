@@ -13,14 +13,12 @@
         <dependency>
             <groupId>com.huijia</groupId>
             <artifactId>back-common-core</artifactId>
-            <version>${revision}</version>
         </dependency>
 
         <!-- RuoYi Common Redis-->
         <dependency>
             <groupId>com.huijia</groupId>
             <artifactId>back-common-redis</artifactId>
-            <version>${revision}</version>
         </dependency>
 
         <!-- Sa-Token 权限认证, 在线文档：http://sa-token.dev33.cn/ -->

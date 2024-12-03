@@ -17,5 +17,24 @@
         <module>back-common-satoken</module>
         <module>back-common-redis</module>
         <module>back-common-bom</module>
+        <module>back-common-log</module>
+        <module>back-common-json</module>
+        <module>back-common-web</module>
+        <module>back-common-doc</module>
+        <module>back-common-encrypt</module>
+        <module>back-common-excel</module>
+        <module>back-common-idempotent</module>
+        <module>back.common.job</module>
+        <module>back.common.mail</module>
+        <module>back-common-oss</module>
+        <module>back-common-ratelimiter</module>
+        <module>back-common-security</module>
+        <module>back-common-sensitive</module>
+        <module>back-common-sms</module>
+        <module>back-common-social</module>
+        <module>back-common-sse</module>
+        <module>back-common-tenant</module>
+        <module>back-common-translation</module>
+        <module>back-common-websocket</module>
     </modules>
 </project>

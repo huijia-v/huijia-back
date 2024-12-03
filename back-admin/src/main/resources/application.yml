@@ -44,7 +44,7 @@ server:
 # 日志配置
 logging:
   level:
-    org.dromara: @logging.level@
+    com.huijia: @logging.level@
     org.springframework: warn
     org.mybatis.spring.mapper: error
   config: classpath:logback-plus.xml
@@ -141,7 +141,7 @@ tenant:
 # MyBatisPlus配置
 # https://baomidou.com/config/
 mybatis-plus:
-  # 多包名使用 例如 org.dromara.**.mapper,org.xxx.**.mapper
+  # 多包名使用 例如 com.huijia.**.mapper,org.xxx.**.mapper
   mapperPackage: com.huijia.**.mapper
   # 对应的 XML 文件位置
   mapperLocations: classpath*:mapper/**/*Mapper.xml
@@ -194,10 +194,10 @@ springdoc:
     # 描述
     description: '描述：用于管理集团旗下公司的人员信息,具体包括XXX,XXX模块...'
     # 版本
-    version: '版本号: ${ruoyi.version}'
+    version: '版本号: ${back.version}'
     # 作者信息
     contact:
-      name: Lion Li
+      name: huijia
       email: crazylionli@163.com
       url: https://gitee.com/dromara/RuoYi-Vue-Plus
   components:
@@ -210,13 +210,13 @@ springdoc:
   #这里定义了两个分组，可定义多个，也可以不定义
   group-configs:
     - group: 1.演示模块
-      packages-to-scan: org.dromara.demo
+      packages-to-scan: com.huijia.demo
     - group: 2.通用模块
-      packages-to-scan: org.dromara.web
+      packages-to-scan: com.huijia.web
     - group: 3.系统模块
-      packages-to-scan: org.dromara.system
+      packages-to-scan: com.huijia.system
     - group: 4.代码生成模块
-      packages-to-scan: org.dromara.generator
+      packages-to-scan: com.huijia.generator
 
 # 防止XSS攻击
 xss:
@@ -274,7 +274,7 @@ websocket:
 --- #flowable配置
 flowable:
   # 开关 用于启动/停用工作流
-  enabled: true
+  enabled: false
   process.enabled: ${flowable.enabled}
   eventregistry.enabled: ${flowable.enabled}
   async-executor-activate: false #关闭定时任务JOB

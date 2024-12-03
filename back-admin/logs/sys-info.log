@@ -39,3 +39,25 @@
 2024-12-03 09:00:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
 2024-12-03 09:00:51 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
 2024-12-03 09:00:51 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-12-03 10:19:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 10:19:24 [main] INFO  com.huijia.test.DemoTest - Starting DemoTest using Java 17.0.10 with PID 16612 (started by Administrator in D:\deskTop\back-end\huijia-back\back-admin)
+2024-12-03 10:19:24 [main] INFO  com.huijia.test.DemoTest - The following 1 profile is active: "dev"
+2024-12-03 10:19:25 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-12-03 10:19:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-12-03 10:19:26 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection com.mysql.cj.jdbc.ConnectionImpl@77ec9fdb
+2024-12-03 10:19:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-12-03 10:19:26 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2024-12-03 10:19:26 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-12-03 10:19:26 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2024-12-03 10:19:26 [main] INFO  c.h.common.redis.config.RedisConfig - 初始化 redis 配置
+2024-12-03 10:19:26 [main] INFO  org.redisson.Version - Redisson 3.37.0
+2024-12-03 10:19:27 [redisson-netty-1-1] INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 47.109.137.116/47.109.137.116:6379
+2024-12-03 10:19:27 [redisson-netty-1-3] INFO  o.r.connection.ConnectionsHolder - 8 connections initialized for 47.109.137.116/47.109.137.116:6379
+2024-12-03 10:19:28 [main] INFO  com.huijia.test.DemoTest - Started DemoTest in 3.427 seconds (process running for 3.894)
+2024-12-03 10:19:28 [SpringApplicationShutdownHook] INFO  c.h.c.core.config.ThreadPoolConfig - ====关闭后台任务任务线程池====
+2024-12-03 10:19:28 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-12-03 10:19:28 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [slave] success,
+2024-12-03 10:19:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-12-03 10:19:28 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-12-03 10:19:28 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
+2024-12-03 10:19:28 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

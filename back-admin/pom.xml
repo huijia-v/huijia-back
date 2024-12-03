@@ -40,50 +40,50 @@
             <version>1.0.0</version>
         </dependency>
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-common-doc</artifactId>-->
 <!--        </dependency>-->
 
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-common-social</artifactId>-->
 <!--        </dependency>-->
 
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-common-ratelimiter</artifactId>-->
 <!--        </dependency>-->
 
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-common-mail</artifactId>-->
 <!--        </dependency>-->
 
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-system</artifactId>-->
 <!--        </dependency>-->
 
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-job</artifactId>-->
 <!--        </dependency>-->
 
         <!-- 代码生成-->
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-generator</artifactId>-->
 <!--        </dependency>-->
 
         <!--  demo模块  -->
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-demo</artifactId>-->
 <!--        </dependency>-->
 
         <!--  工作流模块  -->
 <!--        <dependency>-->
-<!--            <groupId>org.dromara</groupId>-->
+<!--            <groupId>com.huijia</groupId>-->
 <!--            <artifactId>ruoyi-workflow</artifactId>-->
 <!--        </dependency>-->
 

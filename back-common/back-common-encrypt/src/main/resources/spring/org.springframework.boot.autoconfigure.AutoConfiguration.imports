@@ -1,0 +1,3 @@
+com.huijia.common.encrypt.config.EncryptorAutoConfiguration
+com.huijia.common.encrypt.config.ApiDecryptAutoConfiguration
+

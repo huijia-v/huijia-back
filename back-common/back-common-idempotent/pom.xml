@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.huijia</groupId>
+        <artifactId>back-common</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <artifactId>back-common-idempotent</artifactId>
+    <description>
+        back-common-idempotent 幂等功能
+    </description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-json</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-crypto</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.dev33</groupId>
+            <artifactId>sa-token-core</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>
