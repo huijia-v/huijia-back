@@ -1,0 +1,6 @@
+com.huijia.common.core.config.ApplicationConfig
+com.huijia.common.core.config.AsyncConfig
+com.huijia.common.core.config.RuoYiConfig
+com.huijia.common.core.config.ThreadPoolConfig
+com.huijia.common.core.config.ValidatorConfig
+com.huijia.common.core.utils.SpringUtils

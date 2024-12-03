@@ -1,0 +1,27 @@
+2024-12-03 08:47:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 08:47:14 [main] INFO  com.huijia.HuijiaBackApplication - Starting HuijiaBackApplication using Java 17.0.10 with PID 21756 (D:\deskTop\back-end\huijia-back\back-admin\target\classes started by Administrator in D:\deskTop\back-end\huijia-back)
+2024-12-03 08:47:14 [main] INFO  com.huijia.HuijiaBackApplication - The following 1 profile is active: "dev"
+2024-12-03 08:47:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 08:47:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 08:47:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 08:47:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-03 08:47:15 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name '/test': Unsatisfied dependency expressed through field 'dealerMapper': No qualifying bean of type 'com.huijia.mapper.DealerMapper' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2024-12-03 08:47:15 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-03 08:47:15 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealerMapper in com.huijia.controller.DemoController required a bean of type 'com.huijia.mapper.DealerMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.huijia.mapper.DealerMapper' in your configuration.
+

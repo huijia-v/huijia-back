@@ -1,0 +1,33 @@
+2024-12-02 18:41:09 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.huijia.mapper.DealerMapper' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.huijia.mapper.DealerMapper' in your configuration.
+
+2024-12-02 18:42:03 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field dealerMapper in com.huijia.controller.DemoController required a bean of type 'com.huijia.mapper.DealerMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.huijia.mapper.DealerMapper' in your configuration.
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/back-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-admin/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-bom/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-bom/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-core/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-redis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-satoken/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/back-common-satoken/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/back-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
