@@ -132,6 +132,42 @@
                 <artifactId>back-common-sse</artifactId>
                 <version>${revision}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.huijia</groupId>
+                <artifactId>back.common.mail</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huijia</groupId>
+                <artifactId>back-common-idempotent</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huijia</groupId>
+                <artifactId>back-common-excel</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huijia</groupId>
+                <artifactId>back-common-ratelimiter</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huijia</groupId>
+                <artifactId>back.common.job</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.huijia</groupId>
+                <artifactId>back-common-oss</artifactId>
+                <version>${revision}</version>
+            </dependency>
         </dependencies>
 
 

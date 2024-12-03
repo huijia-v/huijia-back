@@ -20,29 +20,10 @@
             <artifactId>mysql-connector-j</artifactId>
         </dependency>
 
-
         <dependency>
             <groupId>com.huijia</groupId>
-            <artifactId>back-common-core</artifactId>
-            <version>1.0.0</version>
+            <artifactId>back-common-doc</artifactId>
         </dependency>
-
-        <dependency>
-            <groupId>com.huijia</groupId>
-            <artifactId>back-common-mybatis</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-
-        <dependency>
-            <groupId>com.huijia</groupId>
-            <artifactId>back-common-redis</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-common-doc</artifactId>-->
-<!--        </dependency>-->
 
 <!--        <dependency>-->
 <!--            <groupId>com.huijia</groupId>-->
@@ -76,10 +57,10 @@
 <!--        </dependency>-->
 
         <!--  demo模块  -->
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-demo</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-demo</artifactId>
+        </dependency>
 
         <!--  工作流模块  -->
 <!--        <dependency>-->

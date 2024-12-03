@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.huijia</groupId>
+        <artifactId>back-modules</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <artifactId>back-demo</artifactId>
+    <description>
+        demo模块
+    </description>
+
+    <dependencies>
+
+        <!-- 通用工具-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-doc</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-sms</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back.common.mail</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-redis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-idempotent</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-mybatis</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-log</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-excel</artifactId>
+
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-ratelimiter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-translation</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-sensitive</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-encrypt</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-tenant</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-websocket</artifactId>
+        </dependency>
+
+    </dependencies>
+</project>

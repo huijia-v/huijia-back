@@ -12,6 +12,7 @@
   <modules>
     <module>back-common</module>
     <module>back-admin</module>
+    <module>back-modules</module>
   </modules>
   <description>Huijia-Back管理系统</description>
 
@@ -344,11 +345,11 @@
 <!--        <version>${revision}</version>-->
 <!--      </dependency>-->
 
-<!--      <dependency>-->
-<!--        <groupId>com.huijia</groupId>-->
-<!--        <artifactId>ruoyi-demo</artifactId>-->
-<!--        <version>${revision}</version>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>com.huijia</groupId>
+        <artifactId>back-demo</artifactId>
+        <version>${revision}</version>
+      </dependency>
 
       <!--  工作流模块  -->
 <!--      <dependency>-->

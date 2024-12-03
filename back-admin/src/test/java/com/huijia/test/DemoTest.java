@@ -8,6 +8,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 /**
  * @author huijia
@@ -17,6 +18,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 public class DemoTest {
 
+
+    @Resource
+    ThreadPoolTaskExecutor executor;
 
     @Resource
     private DealerMapper dealerMapper;
@@ -31,6 +35,14 @@ public class DemoTest {
 
     @Test
     public void test2() {
-        RedisUtils.getClient();
+
+        for (int i = 0; i < 12; i++) {
+            executor.execute(() -> {
+                System.out.println(Thread.currentThread().getName() + "执行任务");
+            });
+        }
     }
+
+
+
 }

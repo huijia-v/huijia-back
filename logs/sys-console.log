@@ -25,3 +25,309 @@ Action:
 
 Consider defining a bean of type 'com.huijia.mapper.DealerMapper' in your configuration.
 
+2024-12-03 16:04:19 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 16:04:19 [main] INFO  com.huijia.HuijiaBackApplication - Starting HuijiaBackApplication using Java 17.0.10 with PID 21888 (D:\deskTop\back-end\huijia-back\back-admin\target\classes started by Administrator in D:\deskTop\back-end\huijia-back)
+2024-12-03 16:04:19 [main] INFO  com.huijia.HuijiaBackApplication - The following 1 profile is active: "dev"
+2024-12-03 16:04:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-03 16:04:20 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 16:04:20 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 16:04:20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:04:20 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-12-03 16:04:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-12-03 16:04:20 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection com.mysql.cj.jdbc.ConnectionImpl@49741274
+2024-12-03 16:04:20 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-12-03 16:04:20 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2024-12-03 16:04:20 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-12-03 16:04:20 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2024-12-03 16:04:21 [main] INFO  c.h.common.redis.config.RedisConfig - 初始化 redis 配置
+2024-12-03 16:04:21 [main] INFO  org.redisson.Version - Redisson 3.37.0
+2024-12-03 16:04:21 [redisson-netty-1-2] INFO  o.r.connection.ConnectionsHolder - 8 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:04:22 [redisson-netty-1-3] INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:04:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-03 16:04:22 [main] INFO  com.huijia.HuijiaBackApplication - Started HuijiaBackApplication in 3.989 seconds (process running for 4.55)
+2024-12-03 16:04:23 [RMI TCP Connection(3)-192.168.126.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:07:43 [SpringApplicationShutdownHook] INFO  c.h.c.core.config.ThreadPoolConfig - ====关闭后台任务任务线程池====
+2024-12-03 16:07:43 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-12-03 16:07:43 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [slave] success,
+2024-12-03 16:07:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-12-03 16:07:43 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-12-03 16:07:43 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
+2024-12-03 16:07:43 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-12-03 16:09:05 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 16:09:05 [main] INFO  com.huijia.HuijiaBackApplication - Starting HuijiaBackApplication using Java 17.0.10 with PID 22964 (D:\deskTop\back-end\huijia-back\back-admin\target\classes started by Administrator in D:\deskTop\back-end\huijia-back)
+2024-12-03 16:09:05 [main] INFO  com.huijia.HuijiaBackApplication - The following 1 profile is active: "dev"
+2024-12-03 16:09:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-03 16:09:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 16:09:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 16:09:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:09:06 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-12-03 16:09:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-12-03 16:09:06 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection com.mysql.cj.jdbc.ConnectionImpl@736f8837
+2024-12-03 16:09:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-12-03 16:09:06 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2024-12-03 16:09:06 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-12-03 16:09:06 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2024-12-03 16:09:06 [main] INFO  c.h.common.redis.config.RedisConfig - 初始化 redis 配置
+2024-12-03 16:09:07 [main] INFO  org.redisson.Version - Redisson 3.37.0
+2024-12-03 16:09:07 [redisson-netty-1-6] INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:09:07 [redisson-netty-1-3] INFO  o.r.connection.ConnectionsHolder - 8 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:09:07 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-12-03 16:09:07 [main] INFO  com.huijia.HuijiaBackApplication - Started HuijiaBackApplication in 2.799 seconds (process running for 3.123)
+2024-12-03 16:09:08 [RMI TCP Connection(1)-192.168.126.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:11:52 [http-nio-8088-exec-1] INFO  o.a.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_1c3c7a064d6a39da5a90bf71821b4a9a=1715580670,1715865928;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-12-03 16:11:52 [http-nio-8088-exec-1] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /
+2024-12-03 16:11:52 [http-nio-8088-exec-1] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /.
+2024-12-03 16:11:52 [http-nio-8088-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+2024-12-03 16:11:52 [http-nio-8088-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /favicon.ico.
+2024-12-03 16:12:01 [http-nio-8088-exec-3] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /
+2024-12-03 16:12:01 [http-nio-8088-exec-3] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /.
+2024-12-03 16:12:26 [http-nio-8088-exec-4] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97
+2024-12-03 16:12:26 [http-nio-8088-exec-4] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97.
+2024-12-03 16:12:26 [http-nio-8088-exec-5] WARN  o.s.web.servlet.PageNotFound - No mapping for OPTIONS /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97
+2024-12-03 16:12:26 [http-nio-8088-exec-5] WARN  o.s.web.servlet.PageNotFound - No endpoint OPTIONS /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97.
+2024-12-03 16:12:53 [http-nio-8088-exec-7] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97
+2024-12-03 16:12:53 [http-nio-8088-exec-7] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97.
+2024-12-03 16:12:53 [http-nio-8088-exec-8] WARN  o.s.web.servlet.PageNotFound - No mapping for OPTIONS /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97
+2024-12-03 16:12:53 [http-nio-8088-exec-8] WARN  o.s.web.servlet.PageNotFound - No endpoint OPTIONS /v3/api-docs/1.%E6%BC%94%E7%A4%BA%E6%A8%A1%E5%9D%97.
+2024-12-03 16:15:33 [http-nio-8088-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [No adapter for handler [com.huijia.controller.DemoController@15ac722b]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler] with root cause
+jakarta.servlet.ServletException: No adapter for handler [com.huijia.controller.DemoController@15ac722b]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
+	at org.springframework.web.servlet.DispatcherServlet.getHandlerAdapter(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-03 16:15:54 [SpringApplicationShutdownHook] INFO  c.h.c.core.config.ThreadPoolConfig - ====关闭后台任务任务线程池====
+2024-12-03 16:15:54 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-12-03 16:15:54 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [slave] success,
+2024-12-03 16:15:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-12-03 16:15:54 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-12-03 16:15:54 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
+2024-12-03 16:15:54 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-12-03 16:15:58 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 16:15:58 [main] INFO  com.huijia.HuijiaBackApplication - Starting HuijiaBackApplication using Java 17.0.10 with PID 24108 (D:\deskTop\back-end\huijia-back\back-admin\target\classes started by Administrator in D:\deskTop\back-end\huijia-back)
+2024-12-03 16:15:58 [main] INFO  com.huijia.HuijiaBackApplication - The following 1 profile is active: "dev"
+2024-12-03 16:15:59 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-12-03 16:15:59 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-03 16:15:59 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-03 16:15:59 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:16:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-12-03 16:16:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-12-03 16:16:00 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection com.mysql.cj.jdbc.ConnectionImpl@38c1b1a7
+2024-12-03 16:16:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-12-03 16:16:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2024-12-03 16:16:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-12-03 16:16:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2024-12-03 16:16:00 [main] INFO  c.h.common.redis.config.RedisConfig - 初始化 redis 配置
+2024-12-03 16:16:00 [main] INFO  org.redisson.Version - Redisson 3.37.0
+2024-12-03 16:16:00 [redisson-netty-1-6] INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:16:00 [redisson-netty-1-3] INFO  o.r.connection.ConnectionsHolder - 8 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:16:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-12-03 16:16:01 [main] INFO  com.huijia.HuijiaBackApplication - Started HuijiaBackApplication in 2.979 seconds (process running for 3.292)
+2024-12-03 16:16:01 [RMI TCP Connection(2)-192.168.126.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:16:54 [http-nio-8088-exec-1] INFO  o.a.tomcat.util.http.parser.Cookie - A cookie header was received [Hm_lvt_1c3c7a064d6a39da5a90bf71821b4a9a=1715580670,1715865928;] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2024-12-03 16:16:54 [http-nio-8088-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [No adapter for handler [com.huijia.controller.DemoController@947d7c6]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler] with root cause
+jakarta.servlet.ServletException: No adapter for handler [com.huijia.controller.DemoController@947d7c6]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
+	at org.springframework.web.servlet.DispatcherServlet.getHandlerAdapter(DispatcherServlet.java:1325)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-03 16:17:16 [http-nio-8088-exec-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /test/hello
+2024-12-03 16:17:16 [http-nio-8088-exec-2] WARN  o.s.web.servlet.PageNotFound - No endpoint GET /test/hello.
+2024-12-03 16:21:46 [SpringApplicationShutdownHook] INFO  c.h.c.core.config.ThreadPoolConfig - ====关闭后台任务任务线程池====
+2024-12-03 16:21:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-12-03 16:21:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [slave] success,
+2024-12-03 16:21:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-12-03 16:21:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-12-03 16:21:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
+2024-12-03 16:21:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-12-03 16:23:30 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 16:23:30 [main] INFO  com.huijia.HuijiaBackApplication - Starting HuijiaBackApplication using Java 17.0.10 with PID 22828 (D:\deskTop\back-end\huijia-back\back-admin\target\classes started by Administrator in D:\deskTop\back-end\huijia-back)
+2024-12-03 16:23:30 [main] INFO  com.huijia.HuijiaBackApplication - The following 1 profile is active: "dev"
+2024-12-03 16:23:31 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-03 16:23:32 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:23:32 [main] INFO  c.h.common.redis.config.RedisConfig - 初始化 redis 配置
+2024-12-03 16:23:32 [main] INFO  org.redisson.Version - Redisson 3.37.0
+2024-12-03 16:23:32 [redisson-netty-1-6] INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:23:32 [redisson-netty-1-3] INFO  o.r.connection.ConnectionsHolder - 8 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:23:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-12-03 16:23:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-12-03 16:23:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection com.mysql.cj.jdbc.ConnectionImpl@15251cc2
+2024-12-03 16:23:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-12-03 16:23:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2024-12-03 16:23:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-12-03 16:23:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2024-12-03 16:23:33 [main] INFO  c.h.common.json.config.JacksonConfig - 初始化 jackson 配置
+2024-12-03 16:23:34 [main] INFO  io.undertow - starting server: Undertow - 2.3.17.Final
+2024-12-03 16:23:34 [main] INFO  org.xnio - XNIO version 3.8.16.Final
+2024-12-03 16:23:34 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.16.Final
+2024-12-03 16:23:34 [main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2024-12-03 16:23:34 [main] INFO  com.huijia.HuijiaBackApplication - Started HuijiaBackApplication in 4.278 seconds (process running for 4.725)
+2024-12-03 16:23:34 [RMI TCP Connection(3)-192.168.126.1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:23:39 [XNIO-1 task-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /test/hello
+2024-12-03 16:23:39 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/test/hello'不存在.
+2024-12-03 16:24:11 [XNIO-1 task-2] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /api/test/hello
+2024-12-03 16:24:11 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/api/test/hello'不存在.
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.17.Final
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  c.h.c.core.config.ThreadPoolConfig - ====关闭后台任务任务线程池====
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [slave] success,
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
+2024-12-03 16:24:24 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-12-03 16:24:29 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 16:24:29 [main] INFO  com.huijia.HuijiaBackApplication - Starting HuijiaBackApplication using Java 17.0.10 with PID 15900 (D:\deskTop\back-end\huijia-back\back-admin\target\classes started by Administrator in D:\deskTop\back-end\huijia-back)
+2024-12-03 16:24:29 [main] INFO  com.huijia.HuijiaBackApplication - The following 1 profile is active: "dev"
+2024-12-03 16:24:31 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-03 16:24:31 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:24:31 [main] INFO  c.h.common.redis.config.RedisConfig - 初始化 redis 配置
+2024-12-03 16:24:31 [main] INFO  org.redisson.Version - Redisson 3.37.0
+2024-12-03 16:24:31 [redisson-netty-1-6] INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:24:31 [redisson-netty-1-3] INFO  o.r.connection.ConnectionsHolder - 8 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:24:31 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-12-03 16:24:31 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-12-03 16:24:32 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection com.mysql.cj.jdbc.ConnectionImpl@4257163f
+2024-12-03 16:24:32 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-12-03 16:24:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2024-12-03 16:24:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-12-03 16:24:32 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2024-12-03 16:24:32 [main] INFO  c.h.common.json.config.JacksonConfig - 初始化 jackson 配置
+2024-12-03 16:24:33 [main] INFO  io.undertow - starting server: Undertow - 2.3.17.Final
+2024-12-03 16:24:33 [main] INFO  org.xnio - XNIO version 3.8.16.Final
+2024-12-03 16:24:33 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.16.Final
+2024-12-03 16:24:33 [main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2024-12-03 16:24:33 [main] INFO  com.huijia.HuijiaBackApplication - Started HuijiaBackApplication in 4.396 seconds (process running for 4.757)
+2024-12-03 16:24:33 [RMI TCP Connection(3)-192.168.126.1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.17.Final
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  c.h.c.core.config.ThreadPoolConfig - ====关闭后台任务任务线程池====
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [slave] success,
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
+2024-12-03 16:25:46 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2024-12-03 16:25:49 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-03 16:25:49 [main] INFO  com.huijia.HuijiaBackApplication - Starting HuijiaBackApplication using Java 17.0.10 with PID 18804 (D:\deskTop\back-end\huijia-back\back-admin\target\classes started by Administrator in D:\deskTop\back-end\huijia-back)
+2024-12-03 16:25:49 [main] INFO  com.huijia.HuijiaBackApplication - The following 1 profile is active: "dev"
+2024-12-03 16:25:51 [main] WARN  io.undertow.websockets.jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2024-12-03 16:25:51 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2024-12-03 16:25:51 [main] INFO  c.h.common.redis.config.RedisConfig - 初始化 redis 配置
+2024-12-03 16:25:51 [main] INFO  org.redisson.Version - Redisson 3.37.0
+2024-12-03 16:25:51 [redisson-netty-1-6] INFO  o.r.connection.ConnectionsHolder - 1 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:25:52 [redisson-netty-1-3] INFO  o.r.connection.ConnectionsHolder - 8 connections initialized for 192.168.1.143/192.168.1.143:6379
+2024-12-03 16:25:52 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2024-12-03 16:25:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2024-12-03 16:25:52 [main] INFO  com.zaxxer.hikari.pool.HikariPool - master - Added connection com.mysql.cj.jdbc.ConnectionImpl@63ff861e
+2024-12-03 16:25:52 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2024-12-03 16:25:52 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [slave] success
+2024-12-03 16:25:52 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2024-12-03 16:25:52 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [2] datasource,primary datasource named [master]
+2024-12-03 16:25:52 [main] INFO  c.h.common.json.config.JacksonConfig - 初始化 jackson 配置
+2024-12-03 16:25:53 [main] INFO  io.undertow - starting server: Undertow - 2.3.17.Final
+2024-12-03 16:25:53 [main] INFO  org.xnio - XNIO version 3.8.16.Final
+2024-12-03 16:25:53 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.16.Final
+2024-12-03 16:25:53 [main] INFO  org.jboss.threads - JBoss Threads version 3.5.0.Final
+2024-12-03 16:25:53 [main] INFO  com.huijia.HuijiaBackApplication - Started HuijiaBackApplication in 4.181 seconds (process running for 4.549)
+2024-12-03 16:25:53 [RMI TCP Connection(4)-192.168.126.1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-03 16:26:17 [XNIO-1 task-2] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 588 ms
+2024-12-03 17:00:15 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - Validation failed for argument [0] in public com.huijia.common.mybatis.core.page.TableDataInfo<com.huijia.demo.domain.vo.TestDemoVo> com.huijia.demo.controller.TestDemoController.list(com.huijia.demo.domain.bo.TestDemoBo,com.huijia.common.mybatis.core.page.PageQuery) with 3 errors: [Field error in object 'testDemoBo' on field 'createTime': rejected value []; codes [typeMismatch.testDemoBo.createTime,typeMismatch.createTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDemoBo.createTime,createTime]; arguments []; default message [createTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'createTime'; Failed to convert from type [java.lang.String] to type [@com.baomidou.mybatisplus.annotation.TableField java.util.Date] for value []]] [Field error in object 'testDemoBo' on field 'params': rejected value []; codes [typeMismatch.testDemoBo.params,typeMismatch.params,typeMismatch.java.util.Map,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDemoBo.params,params]; arguments []; default message [params]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Map' for property 'params'; Cannot convert value of type 'java.lang.String' to required type 'java.util.Map' for property 'params': no matching editors or conversion strategy found]] [Field error in object 'testDemoBo' on field 'updateTime': rejected value []; codes [typeMismatch.testDemoBo.updateTime,typeMismatch.updateTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDemoBo.updateTime,updateTime]; arguments []; default message [updateTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'updateTime'; Failed to convert from type [java.lang.String] to type [@com.baomidou.mybatisplus.annotation.TableField java.util.Date] for value []]] 
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.3.17.Final
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  c.h.c.core.config.ThreadPoolConfig - ====关闭后台任务任务线程池====
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [slave] success,
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  c.b.d.d.d.DefaultDataSourceDestroyer - dynamic-datasource close the datasource named [master] success,
+2024-12-03 17:21:51 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
