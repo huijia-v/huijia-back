@@ -1,7 +1,7 @@
 # 项目相关配置
 back:
   # 名称
-  name: huijia-back
+  name: Back-Vue-Plus
   # 版本
   version: ${revision}
   # 版权年份
@@ -22,7 +22,7 @@ captcha:
 # 开发环境配置
 server:
   # 服务器的HTTP端口，默认为8080
-  port: 8088
+  port: 8089
   servlet:
     # 应用的访问路径
     context-path: /
@@ -44,7 +44,7 @@ server:
 # 日志配置
 logging:
   level:
-    com.huijia: @logging.level@
+    org.dromara: @logging.level@
     org.springframework: warn
     org.mybatis.spring.mapper: error
   config: classpath:logback-plus.xml
@@ -185,21 +185,21 @@ springdoc:
   api-docs:
     # 是否开启接口文档
     enabled: true
-#  swagger-ui:
-#    # 持久化认证数据
-#    persistAuthorization: true
+  #  swagger-ui:
+  #    # 持久化认证数据
+  #    persistAuthorization: true
   info:
     # 标题
-    title: '标题：${back.name}多租户管理系统_接口文档'
+    title: '标题：${ruoyi.name}多租户管理系统_接口文档'
     # 描述
     description: '描述：用于管理集团旗下公司的人员信息,具体包括XXX,XXX模块...'
     # 版本
-    version: '版本号: ${back.version}'
+    version: '版本号: ${ruoyi.version}'
     # 作者信息
     contact:
       name: huijia
       email: huijia_V@163.com
-      url: https://github.com/huijia-v/huijia-back
+      url: https://gitee.com/dromara/RuoYi-Vue-Plus
   components:
     # 鉴权方式配置
     security-schemes:
@@ -274,7 +274,7 @@ websocket:
 --- #flowable配置
 flowable:
   # 开关 用于启动/停用工作流
-  enabled: false
+  enabled: true
   process.enabled: ${flowable.enabled}
   eventregistry.enabled: ${flowable.enabled}
   async-executor-activate: false #关闭定时任务JOB

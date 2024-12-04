@@ -8,10 +8,10 @@
     </parent>
     <artifactId>back-common-redis</artifactId>
     <description>
-        ruoyi-common-redis 缓存服务
+        back-common-redis 缓存服务
     </description>
     <dependencies>
-        <!-- RuoYi Common Core-->
+        <!-- back Common Core-->
         <dependency>
             <groupId>com.huijia</groupId>
             <artifactId>back-common-core</artifactId>

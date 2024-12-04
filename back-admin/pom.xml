@@ -25,36 +25,37 @@
             <artifactId>back-common-doc</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-common-social</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-social</artifactId>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-common-ratelimiter</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-common-ratelimiter</artifactId>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-common-mail</artifactId>-->
-<!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-system</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back.common.mail</artifactId>
+        </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-job</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-system</artifactId>
+        </dependency>
 
-        <!-- 代码生成-->
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-generator</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-job</artifactId>
+        </dependency>
+
+        <!--         代码生成-->
+        <dependency>
+            <groupId>com.huijia</groupId>
+            <artifactId>back-generator</artifactId>
+        </dependency>
 
         <!--  demo模块  -->
         <dependency>
@@ -63,15 +64,15 @@
         </dependency>
 
         <!--  工作流模块  -->
-<!--        <dependency>-->
-<!--            <groupId>com.huijia</groupId>-->
-<!--            <artifactId>ruoyi-workflow</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>com.huijia</groupId>-->
+        <!--            <artifactId>ruoyi-workflow</artifactId>-->
+        <!--        </dependency>-->
 
-<!--        <dependency>-->
-<!--            <groupId>de.codecentric</groupId>-->
-<!--            <artifactId>spring-boot-admin-starter-client</artifactId>-->
-<!--        </dependency>-->
+        <!--        <dependency>-->
+        <!--            <groupId>de.codecentric</groupId>-->
+        <!--            <artifactId>spring-boot-admin-starter-client</artifactId>-->
+        <!--        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

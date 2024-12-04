@@ -15,7 +15,7 @@
             <artifactId>back-common-core</artifactId>
         </dependency>
 
-        <!-- RuoYi Common Redis-->
+        <!-- back Common Redis-->
         <dependency>
             <groupId>com.huijia</groupId>
             <artifactId>back-common-redis</artifactId>

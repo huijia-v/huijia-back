@@ -8,7 +8,7 @@
     </parent>
     <artifactId>back-common-log</artifactId>
     <description>
-        ruoyi-common-log 日志记录
+        back-common-log 日志记录
     </description>
 
 

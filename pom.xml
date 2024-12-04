@@ -13,6 +13,7 @@
     <module>back-common</module>
     <module>back-admin</module>
     <module>back-modules</module>
+    <module>back-extend</module>
   </modules>
   <description>Huijia-Back管理系统</description>
 
@@ -327,23 +328,23 @@
         <version>${fastjson.version}</version>
       </dependency>
 
-<!--      <dependency>-->
-<!--        <groupId>com.huijia</groupId>-->
-<!--        <artifactId>ruoyi-system</artifactId>-->
-<!--        <version>${revision}</version>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>com.huijia</groupId>
+        <artifactId>back-system</artifactId>
+        <version>${revision}</version>
+      </dependency>
 
-<!--      <dependency>-->
-<!--        <groupId>com.huijia</groupId>-->
-<!--        <artifactId>ruoyi-job</artifactId>-->
-<!--        <version>${revision}</version>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>com.huijia</groupId>
+        <artifactId>back-job</artifactId>
+        <version>${revision}</version>
+      </dependency>
 
-<!--      <dependency>-->
-<!--        <groupId>com.huijia</groupId>-->
-<!--        <artifactId>ruoyi-generator</artifactId>-->
-<!--        <version>${revision}</version>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>com.huijia</groupId>
+        <artifactId>back-generator</artifactId>
+        <version>${revision}</version>
+      </dependency>
 
       <dependency>
         <groupId>com.huijia</groupId>

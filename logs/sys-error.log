@@ -1,4 +1,4 @@
-2024-12-03 08:47:15 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2024-12-04 08:29:12 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -6,116 +6,1256 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field dealerMapper in com.huijia.controller.DemoController required a bean of type 'com.huijia.mapper.DealerMapper' that could not be found.
-
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+Parameter 0 of constructor in com.huijia.common.sse.controller.SseController required a bean of type 'com.huijia.common.sse.core.SseEmitterManager' that could not be found.
 
 
 Action:
 
-Consider defining a bean of type 'com.huijia.mapper.DealerMapper' in your configuration.
+Consider defining a bean of type 'com.huijia.common.sse.core.SseEmitterManager' in your configuration.
 
-2024-12-03 16:15:33 [http-nio-8088-exec-2] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [No adapter for handler [com.huijia.controller.DemoController@15ac722b]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler] with root cause
-jakarta.servlet.ServletException: No adapter for handler [com.huijia.controller.DemoController@15ac722b]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
-	at org.springframework.web.servlet.DispatcherServlet.getHandlerAdapter(DispatcherServlet.java:1325)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+2024-12-04 08:32:17 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.huijia.common.sse.controller.SseController required a bean of type 'com.huijia.common.sse.core.SseEmitterManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.huijia.common.sse.core.SseEmitterManager' in your configuration.
+
+2024-12-04 08:33:27 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.huijia.common.sse.controller.SseController required a bean of type 'com.huijia.common.sse.core.SseEmitterManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.huijia.common.sse.core.SseEmitterManager' in your configuration.
+
+2024-12-04 08:53:31 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/auth/code',发生未知异常.
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.hutool.captcha.CircleCaptcha' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334)
+	at cn.hutool.extra.spring.SpringUtil.getBean(SpringUtil.java:122)
+	at com.huijia.web.controller.CaptchaController.getCode(CaptchaController.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.huijia.web.controller.CaptchaController$$SpringCGLIB$$0.getCode(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1512)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-12-03 16:16:54 [http-nio-8088-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [No adapter for handler [com.huijia.controller.DemoController@947d7c6]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler] with root cause
-jakarta.servlet.ServletException: No adapter for handler [com.huijia.controller.DemoController@947d7c6]: The DispatcherServlet configuration needs to include a HandlerAdapter that supports this handler
-	at org.springframework.web.servlet.DispatcherServlet.getHandlerAdapter(DispatcherServlet.java:1325)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
+2024-12-04 09:02:33 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheController' defined in file [D:\deskTop\back-end\huijia-back\back-modules\back-system\target\classes\com\huijia\system\controller\monitor\CacheController.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'redissonConnectionFactory' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Unsatisfied dependency expressed through method 'redissonConnectionFactory' parameter 0: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.1.143/192.168.1.143:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:237)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1375)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1212)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at com.huijia.HuijiaBackApplication.main(HuijiaBackApplication.java:23)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonConnectionFactory' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Unsatisfied dependency expressed through method 'redissonConnectionFactory' parameter 0: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.1.143/192.168.1.143:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:795)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:542)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 17 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfigurationV2.class]: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.1.143/192.168.1.143:6379
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:904)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:782)
+	... 31 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception with message: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.1.143/192.168.1.143:6379
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644)
+	... 45 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.1.143/192.168.1.143:6379
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:228)
+	at org.redisson.connection.MasterSlaveConnectionManager.connect(MasterSlaveConnectionManager.java:188)
+	at org.redisson.config.ConfigSupport.createConnectionManager(ConfigSupport.java:216)
+	at org.redisson.Redisson.<init>(Redisson.java:66)
+	at org.redisson.Redisson.create(Redisson.java:111)
+	at org.redisson.spring.starter.RedissonAutoConfiguration.redisson(RedissonAutoConfiguration.java:331)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146)
+	... 46 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.1.143/192.168.1.143:6379
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.redisson.connection.MasterSlaveConnectionManager.doConnect(MasterSlaveConnectionManager.java:223)
+	... 56 common frames omitted
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 192.168.1.143/192.168.1.143:6379
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$2(ConnectionsHolder.java:165)
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934)
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.connection.ConnectionsHolder.lambda$createConnection$5(ConnectionsHolder.java:179)
+	at java.base/java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:863)
+	at java.base/java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:841)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2162)
+	at org.redisson.client.RedisClient$1$2.run(RedisClient.java:304)
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute$$$capture(AbstractEventExecutor.java:166)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.ConnectTimeoutException: connection timed out after 10000 ms: 192.168.1.143/192.168.1.143:6379
+	at java.base/java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:368)
+	at java.base/java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:377)
+	at java.base/java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:1097)
+	... 12 common frames omitted
+Caused by: io.netty.channel.ConnectTimeoutException: connection timed out after 10000 ms: 192.168.1.143/192.168.1.143:6379
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe$1.run(AbstractNioChannel.java:263)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:156)
+	... 9 common frames omitted
+2024-12-04 09:04:08 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/auth/code',发生未知异常.
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.hutool.captcha.CircleCaptcha' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:343)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:334)
+	at cn.hutool.extra.spring.SpringUtil.getBean(SpringUtil.java:122)
+	at com.huijia.web.controller.CaptchaController.getCode(CaptchaController.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.huijia.web.controller.CaptchaController$$SpringCGLIB$$0.getCode(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
 	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
 	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
 	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
 	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
 	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1512)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-2024-12-03 16:23:39 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/test/hello'不存在.
-2024-12-03 16:24:11 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/api/test/hello'不存在.
-2024-12-03 17:00:15 [XNIO-1 task-2] ERROR c.h.c.w.h.GlobalExceptionHandler - Validation failed for argument [0] in public com.huijia.common.mybatis.core.page.TableDataInfo<com.huijia.demo.domain.vo.TestDemoVo> com.huijia.demo.controller.TestDemoController.list(com.huijia.demo.domain.bo.TestDemoBo,com.huijia.common.mybatis.core.page.PageQuery) with 3 errors: [Field error in object 'testDemoBo' on field 'createTime': rejected value []; codes [typeMismatch.testDemoBo.createTime,typeMismatch.createTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDemoBo.createTime,createTime]; arguments []; default message [createTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'createTime'; Failed to convert from type [java.lang.String] to type [@com.baomidou.mybatisplus.annotation.TableField java.util.Date] for value []]] [Field error in object 'testDemoBo' on field 'params': rejected value []; codes [typeMismatch.testDemoBo.params,typeMismatch.params,typeMismatch.java.util.Map,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDemoBo.params,params]; arguments []; default message [params]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Map' for property 'params'; Cannot convert value of type 'java.lang.String' to required type 'java.util.Map' for property 'params': no matching editors or conversion strategy found]] [Field error in object 'testDemoBo' on field 'updateTime': rejected value []; codes [typeMismatch.testDemoBo.updateTime,typeMismatch.updateTime,typeMismatch.java.util.Date,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [testDemoBo.updateTime,updateTime]; arguments []; default message [updateTime]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.util.Date' for property 'updateTime'; Failed to convert from type [java.lang.String] to type [@com.baomidou.mybatisplus.annotation.TableField java.util.Date] for value []]] 
+2024-12-04 09:10:15 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.huijia.common.sse.controller.SseController required a bean of type 'com.huijia.common.sse.core.SseEmitterManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.huijia.common.sse.core.SseEmitterManager' in your configuration.
+
+2024-12-04 09:24:24 [main] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:24:24 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":0,"args":["PING"]}] 
+2024-12-04 09:24:24 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":1}] 
+2024-12-04 09:24:34 [nioEventLoopGroup-5-2] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:24:34 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":2,"args":["PING"]}] 
+2024-12-04 09:24:44 [nioEventLoopGroup-5-3] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:24:44 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":3,"args":["PING"]}] 
+2024-12-04 09:24:54 [nioEventLoopGroup-5-4] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:24:54 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":4,"args":["PING"]}] 
+2024-12-04 09:25:04 [nioEventLoopGroup-5-5] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:25:04 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":5,"args":["PING"]}] 
+2024-12-04 09:25:06 [redisson-netty-1-7] ERROR o.r.client.handler.CommandDecoder - Unable to decode data. channel: [id: 0x3a3588dd, L:/192.168.1.78:12683 - R:47.109.137.116/47.109.137.116:6379], reply: ReplayingDecoderByteBuf(ridx=1594, widx=1594), command: (GET), params: [global:Authorization:login:token-session:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJSTzlkZk1jcVlCR0lNY3VWWEJTcTBrNzRsY1JtRGRGTyIsImNsaWVudGlkIjoiZTVjZDdlNDg5MWJmOTVkMWQxOTIwNmNlMjRhN2IzMmUiLCJ0ZW5hbnRJZCI6IjAwMDAwMCIsInVzZXJJZCI6MSwidXNlck5hbWUiOiJhZG1pbiIsImRlcHRJZCI6MTAzLCJkZXB0TmFtZSI6IueglOWPkemDqOmXqCIsImRlcHRDYXRlZ29yeSI6IiJ9.Mkt3uoX1fnd8eytPAhftoIP9wtO5IiWrfGj8aqmLRWs], promise: java.util.concurrent.CompletableFuture@3fd0491e[Not completed, 1 dependents]
+com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at com.fasterxml.jackson.databind.exc.InvalidTypeIdException.from(InvalidTypeIdException.java:43)
+	at com.fasterxml.jackson.databind.DeserializationContext.invalidTypeIdException(DeserializationContext.java:2084)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownTypeId(DeserializationContext.java:1575)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver._typeFromId(ClassNameIdResolver.java:79)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver.typeFromId(ClassNameIdResolver.java:69)
+	at com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDeserializer(TypeDeserializerBase.java:159)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:97)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:625)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserializeWithType(MapDeserializer.java:492)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:147)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3809)
+	at org.redisson.codec.TypedJsonJacksonCodec$2.decode(TypedJsonJacksonCodec.java:63)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:444)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:220)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:148)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:124)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-04 09:25:06 [redisson-netty-1-7] ERROR o.r.c.handler.ErrorsLoggingHandler - Exception occured. Channel: [id: 0x3a3588dd, L:/192.168.1.78:12683 - R:47.109.137.116/47.109.137.116:6379]
+io.netty.handler.codec.DecoderException: com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at com.fasterxml.jackson.databind.exc.InvalidTypeIdException.from(InvalidTypeIdException.java:43)
+	at com.fasterxml.jackson.databind.DeserializationContext.invalidTypeIdException(DeserializationContext.java:2084)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownTypeId(DeserializationContext.java:1575)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver._typeFromId(ClassNameIdResolver.java:79)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver.typeFromId(ClassNameIdResolver.java:69)
+	at com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDeserializer(TypeDeserializerBase.java:159)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:97)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:625)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserializeWithType(MapDeserializer.java:492)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:147)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3809)
+	at org.redisson.codec.TypedJsonJacksonCodec$2.decode(TypedJsonJacksonCodec.java:63)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:444)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:220)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:148)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:124)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	... 17 common frames omitted
+2024-12-04 09:25:06 [XNIO-1 task-3] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/system/user/getInfo',发生未知异常.
+org.redisson.client.RedisException: Unexpected exception while processing command
+	at org.redisson.command.CommandAsyncService.convertException(CommandAsyncService.java:369)
+	at org.redisson.command.CommandAsyncService.get(CommandAsyncService.java:182)
+	at org.redisson.RedissonObject.get(RedissonObject.java:98)
+	at org.redisson.RedissonBucket.get(RedissonBucket.java:139)
+	at com.huijia.common.redis.utils.RedisUtils.getCacheObject(RedisUtils.java:210)
+	at com.huijia.common.satoken.core.dao.PlusSaTokenDao.lambda$getObject$1(PlusSaTokenDao.java:101)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.lambda$doComputeIfAbsent$14(BoundedLocalCache.java:2688)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1916)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.doComputeIfAbsent(BoundedLocalCache.java:2686)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.computeIfAbsent(BoundedLocalCache.java:2669)
+	at com.github.benmanes.caffeine.cache.LocalCache.computeIfAbsent(LocalCache.java:112)
+	at com.github.benmanes.caffeine.cache.LocalManualCache.get(LocalManualCache.java:62)
+	at com.huijia.common.satoken.core.dao.PlusSaTokenDao.getObject(PlusSaTokenDao.java:101)
+	at com.huijia.common.tenant.core.TenantSaTokenDao.getObject(TenantSaTokenDao.java:81)
+	at cn.dev33.satoken.dao.SaTokenDao.getSession(SaTokenDao.java:142)
+	at cn.dev33.satoken.stp.StpLogic.getSessionBySessionId(StpLogic.java:1199)
+	at cn.dev33.satoken.stp.StpLogic.getTokenSessionByToken(StpLogic.java:1315)
+	at cn.dev33.satoken.stp.StpLogic.getTokenSession(StpLogic.java:1355)
+	at cn.dev33.satoken.stp.StpLogic.getTokenSession(StpLogic.java:1364)
+	at cn.dev33.satoken.stp.StpUtil.getTokenSession(StpUtil.java:503)
+	at com.huijia.common.satoken.utils.LoginHelper.getLoginUser(LoginHelper.java:66)
+	at com.huijia.system.controller.system.SysUserController.getInfo(SysUserController.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:768)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:720)
+	at com.huijia.system.controller.system.SysUserController$$SpringCGLIB$$0.getInfo(<generated>)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.huijia.common.web.filter.RepeatableFilter.doFilter(RepeatableFilter.java:30)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at cn.dev33.satoken.filter.SaServletFilter.doFilter(SaServletFilter.java:150)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.huijia.common.web.filter.XssFilter.doFilter(XssFilter.java:38)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.huijia.common.encrypt.filter.CryptoFilter.doFilter(CryptoFilter.java:70)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1512)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at com.fasterxml.jackson.databind.exc.InvalidTypeIdException.from(InvalidTypeIdException.java:43)
+	at com.fasterxml.jackson.databind.DeserializationContext.invalidTypeIdException(DeserializationContext.java:2084)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownTypeId(DeserializationContext.java:1575)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver._typeFromId(ClassNameIdResolver.java:79)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver.typeFromId(ClassNameIdResolver.java:69)
+	at com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDeserializer(TypeDeserializerBase.java:159)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:97)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:625)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserializeWithType(MapDeserializer.java:492)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:147)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3809)
+	at org.redisson.codec.TypedJsonJacksonCodec$2.decode(TypedJsonJacksonCodec.java:63)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:444)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:220)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:148)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:124)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-12-04 09:25:06 [redisson-netty-1-1] ERROR o.r.client.handler.CommandDecoder - Unable to decode data. channel: [id: 0x1d616732, L:/192.168.1.78:12687 - R:47.109.137.116/47.109.137.116:6379], reply: ReplayingDecoderByteBuf(ridx=1594, widx=1594), command: (GET), params: [global:Authorization:login:token-session:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJSTzlkZk1jcVlCR0lNY3VWWEJTcTBrNzRsY1JtRGRGTyIsImNsaWVudGlkIjoiZTVjZDdlNDg5MWJmOTVkMWQxOTIwNmNlMjRhN2IzMmUiLCJ0ZW5hbnRJZCI6IjAwMDAwMCIsInVzZXJJZCI6MSwidXNlck5hbWUiOiJhZG1pbiIsImRlcHRJZCI6MTAzLCJkZXB0TmFtZSI6IueglOWPkemDqOmXqCIsImRlcHRDYXRlZ29yeSI6IiJ9.Mkt3uoX1fnd8eytPAhftoIP9wtO5IiWrfGj8aqmLRWs], promise: java.util.concurrent.CompletableFuture@6d25f8d5[Not completed, 1 dependents]
+com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at com.fasterxml.jackson.databind.exc.InvalidTypeIdException.from(InvalidTypeIdException.java:43)
+	at com.fasterxml.jackson.databind.DeserializationContext.invalidTypeIdException(DeserializationContext.java:2084)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownTypeId(DeserializationContext.java:1575)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver._typeFromId(ClassNameIdResolver.java:79)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver.typeFromId(ClassNameIdResolver.java:69)
+	at com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDeserializer(TypeDeserializerBase.java:159)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:97)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:625)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserializeWithType(MapDeserializer.java:492)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:147)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3809)
+	at org.redisson.codec.TypedJsonJacksonCodec$2.decode(TypedJsonJacksonCodec.java:63)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:444)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:220)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:148)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:124)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-12-04 09:25:06 [redisson-netty-1-1] ERROR o.r.c.handler.ErrorsLoggingHandler - Exception occured. Channel: [id: 0x1d616732, L:/192.168.1.78:12687 - R:47.109.137.116/47.109.137.116:6379]
+io.netty.handler.codec.DecoderException: com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:421)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at com.fasterxml.jackson.databind.exc.InvalidTypeIdException.from(InvalidTypeIdException.java:43)
+	at com.fasterxml.jackson.databind.DeserializationContext.invalidTypeIdException(DeserializationContext.java:2084)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownTypeId(DeserializationContext.java:1575)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver._typeFromId(ClassNameIdResolver.java:79)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver.typeFromId(ClassNameIdResolver.java:69)
+	at com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDeserializer(TypeDeserializerBase.java:159)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:97)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:625)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserializeWithType(MapDeserializer.java:492)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:147)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3809)
+	at org.redisson.codec.TypedJsonJacksonCodec$2.decode(TypedJsonJacksonCodec.java:63)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:444)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:220)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:148)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:124)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	... 17 common frames omitted
+2024-12-04 09:25:06 [XNIO-1 task-3] ERROR c.h.c.w.h.GlobalExceptionHandler - 请求地址'/auth/logout',发生未知异常.
+org.redisson.client.RedisException: Unexpected exception while processing command
+	at org.redisson.command.CommandAsyncService.convertException(CommandAsyncService.java:369)
+	at org.redisson.command.CommandAsyncService.get(CommandAsyncService.java:182)
+	at org.redisson.RedissonObject.get(RedissonObject.java:98)
+	at org.redisson.RedissonBucket.get(RedissonBucket.java:139)
+	at com.huijia.common.redis.utils.RedisUtils.getCacheObject(RedisUtils.java:210)
+	at com.huijia.common.satoken.core.dao.PlusSaTokenDao.lambda$getObject$1(PlusSaTokenDao.java:101)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.lambda$doComputeIfAbsent$14(BoundedLocalCache.java:2688)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(ConcurrentHashMap.java:1916)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.doComputeIfAbsent(BoundedLocalCache.java:2686)
+	at com.github.benmanes.caffeine.cache.BoundedLocalCache.computeIfAbsent(BoundedLocalCache.java:2669)
+	at com.github.benmanes.caffeine.cache.LocalCache.computeIfAbsent(LocalCache.java:112)
+	at com.github.benmanes.caffeine.cache.LocalManualCache.get(LocalManualCache.java:62)
+	at com.huijia.common.satoken.core.dao.PlusSaTokenDao.getObject(PlusSaTokenDao.java:101)
+	at com.huijia.common.tenant.core.TenantSaTokenDao.getObject(TenantSaTokenDao.java:81)
+	at cn.dev33.satoken.dao.SaTokenDao.getSession(SaTokenDao.java:142)
+	at cn.dev33.satoken.stp.StpLogic.getSessionBySessionId(StpLogic.java:1199)
+	at cn.dev33.satoken.stp.StpLogic.getTokenSessionByToken(StpLogic.java:1315)
+	at cn.dev33.satoken.stp.StpLogic.getTokenSession(StpLogic.java:1355)
+	at cn.dev33.satoken.stp.StpLogic.getTokenSession(StpLogic.java:1364)
+	at cn.dev33.satoken.stp.StpUtil.getTokenSession(StpUtil.java:503)
+	at com.huijia.common.satoken.utils.LoginHelper.getLoginUser(LoginHelper.java:66)
+	at com.huijia.web.service.SysLoginService.logout(SysLoginService.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:355)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:716)
+	at com.huijia.web.service.SysLoginService$$SpringCGLIB$$0.logout(<generated>)
+	at com.huijia.web.controller.AuthController.logout(AuthController.java:174)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:547)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.huijia.common.web.filter.RepeatableFilter.doFilter(RepeatableFilter.java:30)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at cn.dev33.satoken.filter.SaServletFilter.doFilter(SaServletFilter.java:150)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at cn.dev33.satoken.filter.SaPathCheckFilterForJakartaServlet.doFilter(SaPathCheckFilterForJakartaServlet.java:55)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:113)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.huijia.common.web.filter.XssFilter.doFilter(XssFilter.java:42)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at com.huijia.common.encrypt.filter.CryptoFilter.doFilter(CryptoFilter.java:70)
+	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
+	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
+	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
+	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
+	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
+	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
+	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
+	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
+	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
+	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
+	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
+	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
+	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
+	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:276)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:135)
+	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:132)
+	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
+	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
+	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:256)
+	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:101)
+	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:395)
+	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:859)
+	at org.jboss.threads.ContextHandler$1.runWith(ContextHandler.java:18)
+	at org.jboss.threads.EnhancedQueueExecutor$Task.run(EnhancedQueueExecutor.java:2513)
+	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1538)
+	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidTypeIdException: Could not resolve type id 'org.dromara.common.core.domain.model.LoginUser' as a subtype of `java.lang.Object`: no such class found
+ at [Source: (io.netty.buffer.ByteBufInputStream); line: 1, column: 182] (through reference chain: cn.dev33.satoken.session.SaSession["dataMap"]->java.util.concurrent.ConcurrentHashMap["loginUser"])
+	at com.fasterxml.jackson.databind.exc.InvalidTypeIdException.from(InvalidTypeIdException.java:43)
+	at com.fasterxml.jackson.databind.DeserializationContext.invalidTypeIdException(DeserializationContext.java:2084)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownTypeId(DeserializationContext.java:1575)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver._typeFromId(ClassNameIdResolver.java:79)
+	at com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver.typeFromId(ClassNameIdResolver.java:69)
+	at com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase._findDeserializer(TypeDeserializerBase.java:159)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:97)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer._readAndBindStringKeyMap(MapDeserializer.java:625)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:449)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserialize(MapDeserializer.java:32)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromObject(AsArrayTypeDeserializer.java:61)
+	at com.fasterxml.jackson.databind.deser.std.MapDeserializer.deserializeWithType(MapDeserializer.java:492)
+	at com.fasterxml.jackson.databind.deser.impl.FieldProperty.deserializeAndSet(FieldProperty.java:147)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:314)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer._deserialize(AsArrayTypeDeserializer.java:120)
+	at com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer.deserializeTypedFromAny(AsArrayTypeDeserializer.java:71)
+	at com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializerNR.deserializeWithType(UntypedObjectDeserializerNR.java:115)
+	at com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer.deserialize(TypeWrappedDeserializer.java:74)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4825)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3809)
+	at org.redisson.codec.TypedJsonJacksonCodec$2.decode(TypedJsonJacksonCodec.java:63)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:444)
+	at org.redisson.client.handler.CommandDecoder.decodeCommand(CommandDecoder.java:220)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:148)
+	at org.redisson.client.handler.CommandDecoder.decode(CommandDecoder.java:124)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:530)
+	at io.netty.handler.codec.ReplayingDecoder.callDecode(ReplayingDecoder.java:366)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1357)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:868)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2024-12-04 09:25:14 [nioEventLoopGroup-5-6] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:25:14 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":6,"args":["PING"]}] 
+2024-12-04 09:25:24 [nioEventLoopGroup-5-7] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:25:24 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":7,"args":["PING"]}] 
+2024-12-04 09:25:24 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":8}] 
+2024-12-04 09:25:25 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[0] message:[Request to remote interface timed out.]
+2024-12-04 09:25:34 [nioEventLoopGroup-5-8] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:25:34 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":9,"args":["PING"]}] 
+2024-12-04 09:25:35 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[2] message:[Request to remote interface timed out.]
+2024-12-04 09:25:44 [nioEventLoopGroup-5-9] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:25:44 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":10,"args":["PING"]}] 
+2024-12-04 09:25:45 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[3] message:[Request to remote interface timed out.]
+2024-12-04 09:25:54 [nioEventLoopGroup-5-10] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:25:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[4] message:[Request to remote interface timed out.]
+2024-12-04 09:25:54 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":11,"args":["PING"]}] 
+2024-12-04 09:26:04 [nioEventLoopGroup-5-11] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:26:04 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":12,"args":["PING"]}] 
+2024-12-04 09:26:05 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[5] message:[Request to remote interface timed out.]
+2024-12-04 09:26:14 [nioEventLoopGroup-5-12] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:26:14 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":13,"args":["PING"]}] 
+2024-12-04 09:26:15 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[6] message:[Request to remote interface timed out.]
+2024-12-04 09:26:24 [nioEventLoopGroup-5-13] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:26:24 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":14,"args":["PING"]}] 
+2024-12-04 09:26:24 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":15}] 
+2024-12-04 09:26:25 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[7] message:[Request to remote interface timed out.]
+2024-12-04 09:26:34 [nioEventLoopGroup-5-14] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:26:34 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":16,"args":["PING"]}] 
+2024-12-04 09:26:35 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[9] message:[Request to remote interface timed out.]
+2024-12-04 09:26:44 [nioEventLoopGroup-5-15] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:26:44 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":17,"args":["PING"]}] 
+2024-12-04 09:26:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[10] message:[Request to remote interface timed out.]
+2024-12-04 09:26:54 [nioEventLoopGroup-5-16] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:26:54 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":18,"args":["PING"]}] 
+2024-12-04 09:26:55 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[11] message:[Request to remote interface timed out.]
+2024-12-04 09:27:04 [nioEventLoopGroup-5-17] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:27:04 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":19,"args":["PING"]}] 
+2024-12-04 09:27:05 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[12] message:[Request to remote interface timed out.]
+2024-12-04 09:27:14 [nioEventLoopGroup-5-18] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:27:14 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":20,"args":["PING"]}] 
+2024-12-04 09:27:15 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[13] message:[Request to remote interface timed out.]
+2024-12-04 09:27:24 [nioEventLoopGroup-5-19] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:27:24 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":22}] 
+2024-12-04 09:27:24 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":21,"args":["PING"]}] 
+2024-12-04 09:27:25 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[14] message:[Request to remote interface timed out.]
+2024-12-04 09:27:34 [nioEventLoopGroup-5-20] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:27:34 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":23,"args":["PING"]}] 
+2024-12-04 09:27:35 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[16] message:[Request to remote interface timed out.]
+2024-12-04 09:27:44 [nioEventLoopGroup-5-21] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:27:44 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":24,"args":["PING"]}] 
+2024-12-04 09:27:45 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[17] message:[Request to remote interface timed out.]
+2024-12-04 09:27:54 [nioEventLoopGroup-5-22] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:27:54 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":25,"args":["PING"]}] 
+2024-12-04 09:27:55 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[18] message:[Request to remote interface timed out.]
+2024-12-04 09:28:04 [nioEventLoopGroup-5-23] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:28:04 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":26,"args":["PING"]}] 
+2024-12-04 09:28:05 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[19] message:[Request to remote interface timed out.]
+2024-12-04 09:28:14 [nioEventLoopGroup-5-24] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:28:14 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":27,"args":["PING"]}] 
+2024-12-04 09:28:15 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[20] message:[Request to remote interface timed out.]
+2024-12-04 09:28:24 [nioEventLoopGroup-5-25] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:28:24 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":29}] 
+2024-12-04 09:28:24 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":28,"args":["PING"]}] 
+2024-12-04 09:28:25 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[21] message:[Request to remote interface timed out.]
+2024-12-04 09:31:33 [main] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:31:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":0}] 
+2024-12-04 09:31:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":1,"args":["PING"]}] 
+2024-12-04 09:31:43 [nioEventLoopGroup-5-2] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:31:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":2,"args":["PING"]}] 
+2024-12-04 09:31:53 [nioEventLoopGroup-5-3] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:31:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":3,"args":["PING"]}] 
+2024-12-04 09:31:55 [XNIO-1 task-2] ERROR c.h.c.s.h.SaTokenExceptionHandler - 请求地址'/system/user/getInfo',认证失败'token 无效：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJSTzlkZk1jcVlCR0lNY3VWWEJTcTBrNzRsY1JtRGRGTyIsImNsaWVudGlkIjoiZTVjZDdlNDg5MWJmOTVkMWQxOTIwNmNlMjRhN2IzMmUiLCJ0ZW5hbnRJZCI6IjAwMDAwMCIsInVzZXJJZCI6MSwidXNlck5hbWUiOiJhZG1pbiIsImRlcHRJZCI6MTAzLCJkZXB0TmFtZSI6IueglOWPkemDqOmXqCIsImRlcHRDYXRlZ29yeSI6IiJ9.Mkt3uoX1fnd8eytPAhftoIP9wtO5IiWrfGj8aqmLRWs',无法访问系统资源
+2024-12-04 09:31:55 [XNIO-1 task-3] ERROR c.h.c.s.h.SaTokenExceptionHandler - 请求地址'/system/user/getInfo',认证失败'token 无效：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJzeXNfdXNlcjoxIiwicm5TdHIiOiJSTzlkZk1jcVlCR0lNY3VWWEJTcTBrNzRsY1JtRGRGTyIsImNsaWVudGlkIjoiZTVjZDdlNDg5MWJmOTVkMWQxOTIwNmNlMjRhN2IzMmUiLCJ0ZW5hbnRJZCI6IjAwMDAwMCIsInVzZXJJZCI6MSwidXNlck5hbWUiOiJhZG1pbiIsImRlcHRJZCI6MTAzLCJkZXB0TmFtZSI6IueglOWPkemDqOmXqCIsImRlcHRDYXRlZ29yeSI6IiJ9.Mkt3uoX1fnd8eytPAhftoIP9wtO5IiWrfGj8aqmLRWs',无法访问系统资源
+2024-12-04 09:32:03 [nioEventLoopGroup-5-4] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:32:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":4,"args":["PING"]}] 
+2024-12-04 09:32:13 [nioEventLoopGroup-5-5] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:32:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":5,"args":["PING"]}] 
+2024-12-04 09:32:23 [nioEventLoopGroup-5-6] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:32:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":6,"args":["PING"]}] 
+2024-12-04 09:32:33 [nioEventLoopGroup-5-7] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:32:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":7,"args":["PING"]}] 
+2024-12-04 09:32:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":8}] 
+2024-12-04 09:32:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[1] message:[Request to remote interface timed out.]
+2024-12-04 09:32:43 [nioEventLoopGroup-5-8] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:32:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":9,"args":["PING"]}] 
+2024-12-04 09:32:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[2] message:[Request to remote interface timed out.]
+2024-12-04 09:32:53 [nioEventLoopGroup-5-9] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:32:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":10,"args":["PING"]}] 
+2024-12-04 09:32:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[3] message:[Request to remote interface timed out.]
+2024-12-04 09:33:03 [nioEventLoopGroup-5-10] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:33:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":11,"args":["PING"]}] 
+2024-12-04 09:33:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[4] message:[Request to remote interface timed out.]
+2024-12-04 09:33:13 [nioEventLoopGroup-5-11] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:33:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":12,"args":["PING"]}] 
+2024-12-04 09:33:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[5] message:[Request to remote interface timed out.]
+2024-12-04 09:33:23 [nioEventLoopGroup-5-12] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:33:23 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[6] message:[Request to remote interface timed out.]
+2024-12-04 09:33:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":13,"args":["PING"]}] 
+2024-12-04 09:33:33 [nioEventLoopGroup-5-13] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:33:33 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[7] message:[Request to remote interface timed out.]
+2024-12-04 09:33:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":15}] 
+2024-12-04 09:33:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":14,"args":["PING"]}] 
+2024-12-04 09:33:43 [nioEventLoopGroup-5-14] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:33:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":16,"args":["PING"]}] 
+2024-12-04 09:33:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[9] message:[Request to remote interface timed out.]
+2024-12-04 09:33:53 [nioEventLoopGroup-5-15] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:33:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":17,"args":["PING"]}] 
+2024-12-04 09:33:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[10] message:[Request to remote interface timed out.]
+2024-12-04 09:34:03 [nioEventLoopGroup-5-16] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:34:03 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[11] message:[Request to remote interface timed out.]
+2024-12-04 09:34:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":18,"args":["PING"]}] 
+2024-12-04 09:34:13 [nioEventLoopGroup-5-17] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:34:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":19,"args":["PING"]}] 
+2024-12-04 09:34:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[12] message:[Request to remote interface timed out.]
+2024-12-04 09:34:23 [nioEventLoopGroup-5-18] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:34:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":20,"args":["PING"]}] 
+2024-12-04 09:34:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[13] message:[Request to remote interface timed out.]
+2024-12-04 09:34:33 [nioEventLoopGroup-5-19] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:34:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":22}] 
+2024-12-04 09:34:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":21,"args":["PING"]}] 
+2024-12-04 09:34:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[14] message:[Request to remote interface timed out.]
+2024-12-04 09:34:43 [nioEventLoopGroup-5-20] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:34:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":23,"args":["PING"]}] 
+2024-12-04 09:34:43 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[16] message:[Request to remote interface timed out.]
+2024-12-04 09:34:53 [nioEventLoopGroup-5-21] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:34:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":24,"args":["PING"]}] 
+2024-12-04 09:34:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[17] message:[Request to remote interface timed out.]
+2024-12-04 09:35:03 [nioEventLoopGroup-5-22] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:35:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":25,"args":["PING"]}] 
+2024-12-04 09:35:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[18] message:[Request to remote interface timed out.]
+2024-12-04 09:35:13 [nioEventLoopGroup-5-23] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:35:13 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[19] message:[Request to remote interface timed out.]
+2024-12-04 09:35:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":26,"args":["PING"]}] 
+2024-12-04 09:35:23 [nioEventLoopGroup-5-24] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:35:23 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[20] message:[Request to remote interface timed out.]
+2024-12-04 09:35:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":27,"args":["PING"]}] 
+2024-12-04 09:35:33 [nioEventLoopGroup-5-25] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:35:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":29}] 
+2024-12-04 09:35:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":28,"args":["PING"]}] 
+2024-12-04 09:35:33 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[21] message:[Request to remote interface timed out.]
+2024-12-04 09:35:43 [nioEventLoopGroup-5-26] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:35:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":30,"args":["PING"]}] 
+2024-12-04 09:35:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[23] message:[Request to remote interface timed out.]
+2024-12-04 09:35:47 [XNIO-1 task-6] ERROR c.h.c.w.h.GlobalExceptionHandler - 角色已分配，不能禁用!
+2024-12-04 09:35:53 [nioEventLoopGroup-5-27] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:35:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":31,"args":["PING"]}] 
+2024-12-04 09:35:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[24] message:[Request to remote interface timed out.]
+2024-12-04 09:36:03 [nioEventLoopGroup-5-28] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:36:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":32,"args":["PING"]}] 
+2024-12-04 09:36:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[25] message:[Request to remote interface timed out.]
+2024-12-04 09:36:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":33,"args":["PING"]}] 
+2024-12-04 09:36:13 [nioEventLoopGroup-5-29] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:36:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[26] message:[Request to remote interface timed out.]
+2024-12-04 09:36:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":34,"args":["PING"]}] 
+2024-12-04 09:36:23 [nioEventLoopGroup-5-30] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:36:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[27] message:[Request to remote interface timed out.]
+2024-12-04 09:36:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":36}] 
+2024-12-04 09:36:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":35,"args":["PING"]}] 
+2024-12-04 09:36:33 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[28] message:[Request to remote interface timed out.]
+2024-12-04 09:36:33 [nioEventLoopGroup-5-31] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:36:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":37,"args":["PING"]}] 
+2024-12-04 09:36:44 [nioEventLoopGroup-5-32] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:36:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[30] message:[Request to remote interface timed out.]
+2024-12-04 09:36:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":38,"args":["PING"]}] 
+2024-12-04 09:36:54 [nioEventLoopGroup-5-33] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:36:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[31] message:[Request to remote interface timed out.]
+2024-12-04 09:37:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":39,"args":["PING"]}] 
+2024-12-04 09:37:04 [nioEventLoopGroup-5-34] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:37:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[32] message:[Request to remote interface timed out.]
+2024-12-04 09:37:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":40,"args":["PING"]}] 
+2024-12-04 09:37:14 [nioEventLoopGroup-5-35] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:37:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[33] message:[Request to remote interface timed out.]
+2024-12-04 09:37:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":41,"args":["PING"]}] 
+2024-12-04 09:37:23 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[34] message:[Request to remote interface timed out.]
+2024-12-04 09:37:24 [nioEventLoopGroup-5-36] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:37:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":43}] 
+2024-12-04 09:37:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":42,"args":["PING"]}] 
+2024-12-04 09:37:34 [nioEventLoopGroup-5-37] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:37:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[35] message:[Request to remote interface timed out.]
+2024-12-04 09:37:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":44,"args":["PING"]}] 
+2024-12-04 09:37:44 [nioEventLoopGroup-5-38] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:37:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[37] message:[Request to remote interface timed out.]
+2024-12-04 09:37:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":45,"args":["PING"]}] 
+2024-12-04 09:37:54 [nioEventLoopGroup-5-39] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:37:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[38] message:[Request to remote interface timed out.]
+2024-12-04 09:38:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":46,"args":["PING"]}] 
+2024-12-04 09:38:04 [nioEventLoopGroup-5-40] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:38:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[39] message:[Request to remote interface timed out.]
+2024-12-04 09:38:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":47,"args":["PING"]}] 
+2024-12-04 09:38:14 [nioEventLoopGroup-5-41] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:38:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[40] message:[Request to remote interface timed out.]
+2024-12-04 09:38:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":48,"args":["PING"]}] 
+2024-12-04 09:38:23 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[41] message:[Request to remote interface timed out.]
+2024-12-04 09:38:24 [nioEventLoopGroup-5-42] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:38:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":49,"args":["PING"]}] 
+2024-12-04 09:38:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":50}] 
+2024-12-04 09:38:34 [nioEventLoopGroup-5-43] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:38:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[42] message:[Request to remote interface timed out.]
+2024-12-04 09:38:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":51,"args":["PING"]}] 
+2024-12-04 09:38:44 [nioEventLoopGroup-5-44] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:38:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[44] message:[Request to remote interface timed out.]
+2024-12-04 09:38:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":52,"args":["PING"]}] 
+2024-12-04 09:38:54 [nioEventLoopGroup-5-45] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:38:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[45] message:[Request to remote interface timed out.]
+2024-12-04 09:39:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":53,"args":["PING"]}] 
+2024-12-04 09:39:04 [nioEventLoopGroup-5-46] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:39:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[46] message:[Request to remote interface timed out.]
+2024-12-04 09:39:13 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[47] message:[Request to remote interface timed out.]
+2024-12-04 09:39:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":54,"args":["PING"]}] 
+2024-12-04 09:39:14 [nioEventLoopGroup-5-47] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:39:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":55,"args":["PING"]}] 
+2024-12-04 09:39:24 [nioEventLoopGroup-5-48] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:39:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[48] message:[Request to remote interface timed out.]
+2024-12-04 09:39:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":56,"args":["PING"]}] 
+2024-12-04 09:39:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":57}] 
+2024-12-04 09:39:34 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:39:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[49] message:[Request to remote interface timed out.]
+2024-12-04 09:39:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":58,"args":["PING"]}] 
+2024-12-04 09:39:44 [nioEventLoopGroup-5-2] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:39:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[51] message:[Request to remote interface timed out.]
+2024-12-04 09:39:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":59,"args":["PING"]}] 
+2024-12-04 09:39:54 [nioEventLoopGroup-5-3] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:39:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[52] message:[Request to remote interface timed out.]
+2024-12-04 09:40:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":60,"args":["PING"]}] 
+2024-12-04 09:40:04 [nioEventLoopGroup-5-4] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:40:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[53] message:[Request to remote interface timed out.]
+2024-12-04 09:40:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":61,"args":["PING"]}] 
+2024-12-04 09:40:14 [nioEventLoopGroup-5-5] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:40:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[54] message:[Request to remote interface timed out.]
+2024-12-04 09:40:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":62,"args":["PING"]}] 
+2024-12-04 09:40:24 [nioEventLoopGroup-5-6] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:40:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[55] message:[Request to remote interface timed out.]
+2024-12-04 09:40:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":63,"args":["PING"]}] 
+2024-12-04 09:40:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":64}] 
+2024-12-04 09:40:33 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[56] message:[Request to remote interface timed out.]
+2024-12-04 09:40:34 [nioEventLoopGroup-5-7] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:40:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":65,"args":["PING"]}] 
+2024-12-04 09:40:44 [nioEventLoopGroup-5-8] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:40:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[58] message:[Request to remote interface timed out.]
+2024-12-04 09:40:53 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[59] message:[Request to remote interface timed out.]
+2024-12-04 09:40:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":66,"args":["PING"]}] 
+2024-12-04 09:40:54 [nioEventLoopGroup-5-9] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:41:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":67,"args":["PING"]}] 
+2024-12-04 09:41:04 [nioEventLoopGroup-5-10] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:41:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[60] message:[Request to remote interface timed out.]
+2024-12-04 09:41:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":68,"args":["PING"]}] 
+2024-12-04 09:41:14 [nioEventLoopGroup-5-11] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:41:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[61] message:[Request to remote interface timed out.]
+2024-12-04 09:41:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":69,"args":["PING"]}] 
+2024-12-04 09:41:24 [nioEventLoopGroup-5-12] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:41:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[62] message:[Request to remote interface timed out.]
+2024-12-04 09:41:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":70,"args":["PING"]}] 
+2024-12-04 09:41:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":71}] 
+2024-12-04 09:41:34 [nioEventLoopGroup-5-13] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:41:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[63] message:[Request to remote interface timed out.]
+2024-12-04 09:41:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":72,"args":["PING"]}] 
+2024-12-04 09:41:44 [nioEventLoopGroup-5-14] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:41:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[65] message:[Request to remote interface timed out.]
+2024-12-04 09:41:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":73,"args":["PING"]}] 
+2024-12-04 09:41:54 [nioEventLoopGroup-5-15] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:41:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[66] message:[Request to remote interface timed out.]
+2024-12-04 09:42:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":74,"args":["PING"]}] 
+2024-12-04 09:42:04 [nioEventLoopGroup-5-16] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:42:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[67] message:[Request to remote interface timed out.]
+2024-12-04 09:42:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":75,"args":["PING"]}] 
+2024-12-04 09:42:14 [nioEventLoopGroup-5-17] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:42:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[68] message:[Request to remote interface timed out.]
+2024-12-04 09:42:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":76,"args":["PING"]}] 
+2024-12-04 09:42:24 [nioEventLoopGroup-5-18] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:42:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[69] message:[Request to remote interface timed out.]
+2024-12-04 09:42:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":77,"args":["PING"]}] 
+2024-12-04 09:42:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":78}] 
+2024-12-04 09:42:34 [nioEventLoopGroup-5-19] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:42:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[70] message:[Request to remote interface timed out.]
+2024-12-04 09:42:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":79,"args":["PING"]}] 
+2024-12-04 09:42:44 [nioEventLoopGroup-5-20] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:42:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[72] message:[Request to remote interface timed out.]
+2024-12-04 09:42:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":80,"args":["PING"]}] 
+2024-12-04 09:42:54 [nioEventLoopGroup-5-21] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:42:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[73] message:[Request to remote interface timed out.]
+2024-12-04 09:43:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":81,"args":["PING"]}] 
+2024-12-04 09:43:04 [nioEventLoopGroup-5-22] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:43:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[74] message:[Request to remote interface timed out.]
+2024-12-04 09:43:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":82,"args":["PING"]}] 
+2024-12-04 09:43:14 [nioEventLoopGroup-5-23] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:43:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[75] message:[Request to remote interface timed out.]
+2024-12-04 09:43:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":83,"args":["PING"]}] 
+2024-12-04 09:43:24 [nioEventLoopGroup-5-24] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:43:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[76] message:[Request to remote interface timed out.]
+2024-12-04 09:43:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":85}] 
+2024-12-04 09:43:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":84,"args":["PING"]}] 
+2024-12-04 09:43:34 [nioEventLoopGroup-5-25] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:43:34 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[77] message:[Request to remote interface timed out.]
+2024-12-04 09:43:43 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":86,"args":["PING"]}] 
+2024-12-04 09:43:44 [nioEventLoopGroup-5-26] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:43:44 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[79] message:[Request to remote interface timed out.]
+2024-12-04 09:43:53 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":87,"args":["PING"]}] 
+2024-12-04 09:43:54 [nioEventLoopGroup-5-27] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:43:54 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[80] message:[Request to remote interface timed out.]
+2024-12-04 09:44:03 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":88,"args":["PING"]}] 
+2024-12-04 09:44:04 [nioEventLoopGroup-5-28] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:44:04 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[81] message:[Request to remote interface timed out.]
+2024-12-04 09:44:13 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":89,"args":["PING"]}] 
+2024-12-04 09:44:14 [nioEventLoopGroup-5-29] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:44:14 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[82] message:[Request to remote interface timed out.]
+2024-12-04 09:44:23 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":90,"args":["PING"]}] 
+2024-12-04 09:44:24 [nioEventLoopGroup-5-30] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:44:24 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[83] message:[Request to remote interface timed out.]
+2024-12-04 09:44:33 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":91,"args":["PING"]}] 
+2024-12-04 09:44:33 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":92}] 
+2024-12-04 09:44:34 [nioEventLoopGroup-5-31] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:45:46 [main] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:45:46 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":0}] 
+2024-12-04 09:45:46 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":1,"args":["PING"]}] 
+2024-12-04 09:45:56 [nioEventLoopGroup-5-2] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:45:56 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":2,"args":["PING"]}] 
+2024-12-04 09:46:06 [nioEventLoopGroup-5-3] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:46:06 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":3,"args":["PING"]}] 
+2024-12-04 09:46:16 [nioEventLoopGroup-5-4] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:46:16 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":4,"args":["PING"]}] 
+2024-12-04 09:46:26 [nioEventLoopGroup-5-5] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:46:26 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":5,"args":["PING"]}] 
+2024-12-04 09:46:36 [nioEventLoopGroup-5-6] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:46:36 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":6,"args":["PING"]}] 
+2024-12-04 09:46:46 [nioEventLoopGroup-5-7] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:46:46 [sync-remote-config] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/sync/version] method:[POST] body:[{"reqId":8}] 
+2024-12-04 09:46:46 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":7,"args":["PING"]}] 
+2024-12-04 09:46:47 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[1] message:[Request to remote interface timed out.]
+2024-12-04 09:46:56 [nioEventLoopGroup-5-8] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:46:56 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":9,"args":["PING"]}] 
+2024-12-04 09:46:57 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[2] message:[Request to remote interface timed out.]
+2024-12-04 09:47:06 [nioEventLoopGroup-5-9] ERROR c.a.s.c.c.r.c.NettyHttpConnectClient - connect error:Connection refused: no further information: /127.0.0.1:17888
+2024-12-04 09:47:06 [sj-client-register] ERROR c.a.s.c.c.rpc.client.NettyChannel - send message but channel is null url:[/beat] method:[POST] body:[{"reqId":10,"args":["PING"]}] 
+2024-12-04 09:47:06 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[3] message:[Request to remote interface timed out.]
+2024-12-04 09:47:17 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[4] message:[Request to remote interface timed out.]
+2024-12-04 09:47:27 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[5] message:[Request to remote interface timed out.]
+2024-12-04 09:47:37 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[6] message:[Request to remote interface timed out.]
+2024-12-04 09:47:47 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[7] message:[Request to remote interface timed out.]
+2024-12-04 09:47:57 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[9] message:[Request to remote interface timed out.]
+2024-12-04 09:48:07 [snail-job-rpc-timeout-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[10] message:[Request to remote interface timed out.]
+2024-12-04 09:54:36 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[1] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:54:46 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[2] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:54:56 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[3] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:55:06 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[4] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:55:16 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[5] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:55:26 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[6] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:55:36 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[7] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:55:46 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[9] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:55:56 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[10] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:56:06 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[11] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:56:16 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[12] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
+2024-12-04 09:56:26 [nioEventLoopGroup-5-1] ERROR c.a.s.c.c.handler.ClientRegister - heartbeat check requestId:[13] message:[Token authentication failed. [namespace:dev groupName:back_group token:SJ_cKqBTPzCsWA3VyuCfFoccmuIEGXjr5KT]]
